@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (_req, res) => res.json({ status: 'ok' }));
+app.get('/', (_req, res) => res.json({ status: 'success' }));
 
 app.use('/items', itemsRouter);
 
