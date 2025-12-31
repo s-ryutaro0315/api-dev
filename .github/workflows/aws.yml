@@ -33,7 +33,7 @@ on:
 env:
   AWS_REGION: ap-northeast-1
   ECR_REPOSITORY: sample/api-dev
-  ECS_SERVICE: MY_ECS_SERVICE                   # set this to your Amazon ECS service name
+  ECS_SERVICE: api-dev-service-knnf7ol8         # set this to your Amazon ECS service name
   ECS_CLUSTER: fargate-cluster                  # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: task-definition.json     # set this to the path to your Amazon ECS task definition　# file, e.g. .aws/task-definition.json
   CONTAINER_NAME: api-dev
