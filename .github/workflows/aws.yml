@@ -32,7 +32,7 @@ on:
 
 env:
   AWS_REGION: ap-northeast-1
-  ECR_REPOSITORY: 840577819179.dkr.ecr.ap-northeast-1.amazonaws.com/sample/api-dev
+  ECR_REPOSITORY: sample/api-dev
   # ECS_SERVICE: MY_ECS_SERVICE                   # set this to your Amazon ECS service name
   # ECS_CLUSTER: MY_ECS_CLUSTER                   # set this to your Amazon ECS cluster name
   # ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION   # set this to the path to your Amazon ECS task definition　# file, e.g. .aws/task-definition.json
