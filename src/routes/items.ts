@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { z } from 'zod';
+import { connectToDB, pool } from '../db/pool';
 
 const router = Router();
 
@@ -15,6 +16,7 @@ let items: Item[] = [
 ];
 
 router.get('/', (_req, res) => {
+  connectToDB();
   res.json(items);
 });
 

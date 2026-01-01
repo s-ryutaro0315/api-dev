@@ -5,8 +5,10 @@ const envSchema = z.object({
   PORT: z.coerce.number(),
 
   DB_HOST: z.string(),
+  DB_PORT: z.coerce.number(),
   DB_USER: z.string(),
   DB_PASSWORD: z.string(),
+  DB_NAME: z.string(),
 
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]),
 });
